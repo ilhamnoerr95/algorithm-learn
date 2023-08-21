@@ -9,7 +9,7 @@ function isPrime(n){
     /**
      * @optimize function
      * optimzed algorigthm
-     *  dengan menggunakan otimzed dimana kita bisa mengurangi beban 
+     *  dengan menggunakan otimzed dimana kita bisa mengurangi beban loop
      */
     // iterasi apabila sudah terpenuhi maka stop disitu
     for(let i =2; i <= Math.sqrt(n); i++){

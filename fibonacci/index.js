@@ -20,5 +20,5 @@ console.log(fibonacci(7)) //[0,1,1,2,3,5,8]
  * calculation not dependent on input size - O(1)
  * 1. loop O(n)
  * 2. nested loop O(n^2)
- * input size reduced by half - O(logn())
+ * input size reduced by half - O(logn)
  */

@@ -4,3 +4,5 @@ Linear search pseudocode:
 - at each element though, check if the element is equal to the target element.
 - if element found, return the index of the element
 - if element not found, return -1
+
+{link}[https://socs.binus.ac.id/2019/12/26/binary-search/]

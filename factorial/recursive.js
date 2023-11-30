@@ -10,7 +10,8 @@ if(n === 0) {
  * 3-1 =2 * 12 = 24
  * 2-1 = 1 * 24 = 24
  * 1- 1 = 0
- */
+*/
+console.log(n)
 return n * recursionFactorial(n-1)
 
 }

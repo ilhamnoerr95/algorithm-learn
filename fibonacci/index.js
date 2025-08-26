@@ -1,18 +1,17 @@
-
 // problem: Give a number 'n' , find the first 'n' elements of the fibonacci sequence.
-function fibonacci (n){
-    const fib = [0,1]
-    for(let i= 2;i< n ;i++){
-        fib[i]= fib[i-1] + fib[i-2]
-        // console.log(i)
-        // console.log([i-1],  [i-2])
-    }
-    return fib
+function fibonacci(n) {
+	const fib = [0, 1];
+	// start dari index ke 2
+	for (let i = 2; i < n; i++) {
+		fib[i] = fib[i - 1] + fib[i - 2];
+		console.log({ index: i }, [i - 1], [i - 2], "ini rumushnya");
+	}
+	return fib;
 }
 
-console.log(fibonacci(2)) //[0,1]
-console.log(fibonacci(3)) //[0,1,1]
-console.log(fibonacci(7)) //[0,1,1,2,3,5,8]
+// console.log(fibonacci(2)); //[0,1]
+console.log(fibonacci(4)); //[0,1,1,2]
+// console.log(fibonacci(7)) //[0,1,1,2,3,5,8]
 //  bit-o = 0(n)
 
 /**

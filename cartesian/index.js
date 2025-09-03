@@ -1,18 +1,21 @@
-const cartasianLogic = (arr1,arr2)=>{
-    const result= []
+const cartasianLogic = (arr1, arr2) => {
+	const result = [];
 
-    for(let i =0 ; i < arr1.length ; i++){
-        console.log(i)
-        for(let j =0; j < arr2.length ; j++){
-            result.push([arr1[i],arr2[j]])
-        }
-    }
+	for (let i = 0; i < arr1.length; i++) {
+		console.log(i);
+		for (let j = 0; j < arr2.length; j++) {
+			result.push([arr1[i], arr2[j]]);
+		}
+	}
 
-    return result;
+	return result;
+};
 
-}
+const arr1 = [1, 2];
+const arr2 = [3, 4, 5];
+console.log(cartasianLogic(arr1, arr2)); // [1,3], [1,4], [1,5], [2,3], [2,4], [2,5]
 
-
-const arr1 = [1,2]
-const arr2 = [3,4,5]
-console.log(cartasianLogic(arr1, arr2)) // [1,3], [1,4], [1,5], [2,3], [2,4], [2,5]
+// cartesian logic ini lebih mengutamakan kejelasan dan perbedaan, lebih fokus terhadap cara berfikir rasional dan lgois
+// dimana hasil dari cartasianLogic ini mengenumerasi semua kemungkinan kombinasi dari dua array yang diberikan,
+// tetapi tidak menentukan apakah kombinasi tersebut cocok dengan aturan tertentu.
+//  biasanya ketika setiap kemungkinan di pecah akan dijadikan satu kembali agar lebih sistematis untuk menentukan solusi lengkapnya
